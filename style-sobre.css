@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 22px;
+  }
+
+  .destaque {
+    font-weight: 700;
+    color: #238E23
+  }
+
+  .observacao {
+    margin-top: 60px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Texto da observação */
+  .observacao {
+    font-size: 17px;
+    font-family: 'Tinos', sans-serif;
+    color: #444;
+  }
+  
+  /* Estilo dos links */
+  .link-termos {
+    color: #238E23 ;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .link-politicas {
+    color: #238E23;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* Modal geral */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 20px 20px 1px 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    overflow-y: auto;
+    max-height: 60vh;
+    box-sizing: border-box;
+  }
+
+  .modal-content h2 {
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+
+  .modal-content p {
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  
+  /* Botão fechar */
+  .close {
+    color: #ff0000;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+
+  @media (max-width: 600px) {
+    .modal-content {
+      text-align: left;
+      padding: 20px 25px 1px 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .links-legais {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: nowrap;
+      padding: 0 10px;
+      margin-top: 25px;
+    }
+    .link-termos,
+  .link-politicas {
+    font-size: 20px; /* diminui o texto pra caber */
+    white-space: nowrap; /* impede quebra de linha */
+  }
+  }
+
+  .modal-content h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    word-break: break-word;
+  }
+  
